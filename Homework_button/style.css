@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background: lightgrey;
+}
+.button {
+    text-align: center;
+    text-transform: uppercase;
+    width: 140px;
+    height: 70px;
+    line-height: 70px;
+    margin: 30px auto;
+    position: relative;
+}
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+rect {
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-dasharray: 440, 0;
+    transition: .5s;
+}
+.button:hover rect{
+    stroke-width: 5;
+    stroke-dasharray: 30, 265;
+    stroke-dashoffset: 30;
+}
